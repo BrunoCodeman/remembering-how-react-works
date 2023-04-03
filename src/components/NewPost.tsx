@@ -15,7 +15,7 @@ const buildBehavior = (enteredAuthor: string, enteredBody: string, setEnteredBod
   const submitHandler = (event: SubmitEvent) => {
     event.preventDefault();
     const postData = {
-      text: enteredBody,
+      body: enteredBody,
       author: enteredAuthor
     };
     onSubmit(postData);
